@@ -1,0 +1,24 @@
+{
+    "apps": [
+        {
+            "name": "birthday-app",
+            "script": "./app.js",
+            "instances": "1",
+            "watch": false,
+            "ignore_watch": [
+                "node_modules"
+            ],
+            "exec_mode": "cluster",
+            "instance_var": "INSTANCE_ID",
+            "log_date_format": "YYYY-MM-DD HH:mm Z",
+            "combine_logs": true,
+            "merge_logs": true,
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "env_production": {
+                "NODE_ENV": "production"
+            }
+        }
+    ]
+}

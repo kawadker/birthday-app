@@ -14,10 +14,10 @@ app.use(cors({
 app.use(cors());
 app.use(express.urlencoded({ extended: true }))
 
-app.use(express.static(path.join(__dirname, 'dist/angular-app')));
+app.use(express.static(path.join(__dirname, '/dist/trishika-birthday')));
 
 app.use('/**', (req, res) => {
-    res.sendFile(path.join(__dirname, 'dist/angular-app/index.html'))
+    res.sendFile(path.join(__dirname, '/dist/trishika-birthday/index.html'))
 });
 
 app.get('/test-app', (req, res) => {
